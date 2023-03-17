@@ -7,4 +7,5 @@
 /project/target/
 /project/project/
 /project/.bloop/
+/project/metals.sbt
 /target/

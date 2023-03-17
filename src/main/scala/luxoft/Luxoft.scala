@@ -48,5 +48,5 @@ object Luxoft extends ZIOAppDefault:
 
   private def print(status: SensorStatus): Task[Unit] =
     status.average match
-      case Some(avg) => Console.printLine(s"${status.sensorId},${status.min},${avg},${status.max}")
+      case Some(avg) => Console.printLine(s"${status.sensorId},${status.minString},${avg},${status.maxString}")
       case None      => Console.printLine(s"${status.sensorId},NaN,NaN")
